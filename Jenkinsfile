@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     // Deploy Docker container
-                    docker.image("my-tomcat-app").run("--name=my-tomcat-container -p 8080:8080 -d")
+                    docker.image("my-tomcat-app").run("--name=my-tomcat-container -p 9090:8080 -d")
                 }
             }
         }
